@@ -1,0 +1,187 @@
+.body {
+    background-image: linear-gradient(280deg, #B068E9 60%, #6463E7 100% );
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.imgbox {
+    display: block;
+}
+
+.desktopimgbox {
+    display: none;
+}
+
+.mobilewoman {
+    width: 237px;
+    height: 140px;
+    position: absolute;
+    top: 74px;
+    left: 70px;
+    z-index: 1;
+    display: block;
+
+}
+
+.mobilepattern {
+    width: 200px;
+    position: absolute;
+    top: 160px;
+    left: 90px;
+    z-index: 1;
+    display: block;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    max-width: 920px;
+    height: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 24px;
+    margin-right: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    align-items: start;
+
+}
+
+.arrow {
+    width: 8px;
+    height: 4px;
+}
+
+.errowrotate{
+    width: 8px;
+    height: 4px;
+    transform:rotate(180deg)
+}
+
+.allh3 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.intextbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    display: none;
+    margin-top: -10px;
+}
+
+.FAQ {
+    margin-top: 132px;
+    font-weight: 700;
+    font-size: 32px;
+
+}
+
+.miniboxes {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #E8E8EA;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    width: 279px;
+    margin-left: 20px;
+    justify-content: space-between;
+    gap: 13px;
+}
+
+.allinbox {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.content {
+    font-weight: 400;
+    font-size: 12px;
+    color: #787887;
+}
+
+@media screen and (min-width: 500px) {
+    .body {
+        background: linear-gradient(280deg, #B068E9 60%, #6463E7 100%);
+    }
+
+    .allh3:hover {
+        color: red;
+        transition: 0.3s ;
+        cursor: pointer;
+    }
+
+    .desktopimgbox {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .desktoppattern {
+        width: 500px;
+        margin-left: -100px;
+    }
+
+    .desktopwoman {
+        width: 475px;
+        position: absolute;
+        top: 40px;
+        left: -90px;
+    }
+
+    .desktopbox {
+        width: 200px;
+        margin-top: -310px;
+        margin-left: -120px;
+        z-index: 1;
+    }
+
+    .mobilepattern {
+        display: none;
+    }
+
+    .mobilewoman {
+        display: none;
+    }
+
+    .textbox {
+        align-self: center;
+        width: 920px;
+        justify-content: space-around;
+        flex-direction: row;
+        min-height: 509px;
+    }
+
+    .miniboxes {
+        width: 350px;
+    }
+
+    .intextbox {}
+
+    .FAQ {
+        display: flex;
+        align-self: first baseline;
+        padding-left: 15px;
+        margin-top: 65px;
+    }
+
+  
+    .arrow{
+        cursor: pointer;
+    }
+}
